@@ -3,8 +3,16 @@ body {
     padding: 0;
     overflow-x: hidden;
     font-family: sans-serif;
+    background-color: #121212;
       /* Detta bestämmer hur bakrunden på hemsidan ska se ut */
   }
+
+h2 {
+    float: left;
+    color: white;
+    margin: 0;
+    padding: 16px;
+}
 
 nav ul {
     list-style-type: none;
@@ -45,10 +53,18 @@ main {
     text-align: left;
 }
 
-h1, p {
+h1 {
     font-family: sans-serif;
     width: 50%;
     padding-left: 50%;
+    color: #d6d6d6;
+}
+
+p {
+    font-family: sans-serif;
+    width: 50%;
+    padding-left: 50%;
+    color: #bebebe;
 }
 
 img {
@@ -57,5 +73,28 @@ img {
     margin-right: auto;
     width: 50%;
     border: 3px solid black;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #202222;
+    text-align: center;
+    padding: 15px;
+    margin-top: 100px;
+    color: white;
+}
+
+.Quick-links { /* Genvägar/Länkar i footer */
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    color: #dddddd;
+}
+
+.Social-links { /* Genvägar/Länkar i footer */
+    display: inline-block;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    color: #dddddd;
 }
 
