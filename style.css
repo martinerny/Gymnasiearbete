@@ -1,0 +1,232 @@
+/* Martin Eriksson Nyberg EEDAT3 */
+body {
+    margin: 0;
+    overflow-x: hidden; /* Hindrar horisontell scrollning */
+    font-family: sans-serif;
+    background-color: #121212;
+      /* Detta bestämmer hur bakrunden på hemsidan ska se ut */
+}
+
+h2 {
+    float: left; /* Flyttar rubriken till vänster */
+    color: white;
+    margin: 0; /*  */ ;
+    padding: 12px; /* Lägger till avstånd run texten */
+    padding-left: 0;
+}
+
+.Logo {
+    float: left;
+    margin: 0;
+    padding: 5px;
+    padding-right: 20px;
+    border: hidden;
+    width: 25px;
+    background-color: #202222
+}
+
+nav ul {
+    list-style-type: none; /* Tar bort punkterna från listan */
+    color: #ffffff;
+    text-align: right; /* Flyttar texten till höger */
+    width: 100%;
+    margin: 0;
+    padding: 16px;
+    background-color: #202222;
+    box-sizing: border-box;
+    margin-bottom: 75px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 15px;
+}
+
+nav ul li {
+    display: inline; /* Gör så att listan visas horisontellt */
+}
+
+nav a {
+    text-decoration: none; /* Tar bort understrykningar från länkar */
+    font-size: 20px;
+    font-weight: bold;
+    color: inherit;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #d4d4d4; /* Ändring av bakgrundsfärg när musen hålls över en länk */
+    color: #202222;
+    transition: 400ms ease-in-out; /* Mjuk övergång */
+    transform:matrix(1.1);
+}
+
+nav a.Active {
+    background-color: #00ccff; /* Ändring av bakgrundsfärg när musen hålls över en länk */
+    color: #202222;
+}
+     
+main {
+    margin-top: 100px;
+    display: flex;
+}
+      
+.left, .right {
+    width: 50%; /* Delar upp sidan i två lika stora delar */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.left {
+    margin: auto;
+    text-align: left;
+    padding-top: 0;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: 25px;
+    width: 40%; /* Gör bilden responsiv */
+    height: auto; 
+    border-radius: 50%;
+    border: 2px solid #5e5e5e;
+    padding: 2.5px;
+}
+
+h1 {
+    font-family: sans-serif;
+    width: 50%;
+    color: #d6d6d6;
+    margin-top: 0;
+}
+
+#welcome {
+    color: #b8b8b8;
+    margin: 0;
+}
+
+#highlight {
+    color: #00ccff; /* Ljusblå färg för markerad text (se rad 27 - Index.html) */
+}
+
+#Home {
+    font-family: sans-serif;
+    width: 50%;
+    color: #bebebe;
+    line-height: 1.5; /* Radavstånd för bättre läsbarhet */
+}
+
+button {
+    background-color: #a8a8a8;
+    border: 2px solid #1d1d1d;
+    border-radius: 5px; /* Rundar hörnen på knappen */
+    padding: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00ccff;
+    transition: 400ms ease-in-out;
+}
+
+
+header {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    padding: 50px;
+    padding-bottom: 25px;
+}
+
+p {
+    font-family: sans-serif;
+    color: #ebebeb;
+    line-height: 1.5; /* Radavstånd för bättre läsbarhet */
+}
+
+#WhoAmI  {
+    margin: 400px;
+    margin-top: 0;
+    margin-bottom: 75px;
+    box-sizing: border-box;
+    background-color: #1d1d1d;
+    padding: 15px;
+    border-radius: 5%;
+    box-shadow: 4px 4px 10px;
+}
+
+#AboutIMG {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    border: 2px white;
+    background-color: #202222;
+}
+
+#EduProj {
+    display: flex;
+}
+
+#Education, #Projects {
+    margin: 75px;
+    margin-top: 50px;
+    margin-bottom: 75px;
+    box-sizing: border-box;
+    background-color: #1d1d1d;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px;
+}
+
+.dropbtn {
+    background-color: #a8a8a8;
+    color: #000000;
+    padding: 16px;
+    font-size: 16px;
+}
+
+.dropbtn:hover {
+    background-color: #00b9e7;
+    transition: 400ms ease-in-out;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #202222;
+    text-align: center;
+    padding: 30px;
+    margin-top: 150px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.Quick-links, .Social-links { /* Genvägar/Länkar i footer */
+    display: inline-block; /* Gör länkarna horisontella */
+    margin-right: 30px; 
+    color: #bebebe;
+}  
+
+.Quick-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.Social-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.Quick-links ul li {
+    margin-bottom: 5px;
+}
+
+.Social-links ul li {
+    margin-bottom: 5px;
+}
+
+
+@media only screen and (max-device-width: 1250px) {
+
+    
+}
