@@ -48,14 +48,13 @@ nav a {
     font-weight: bold;
     color: inherit;
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 nav a:hover {
     background-color: #d4d4d4; /* Ändring av bakgrundsfärg när musen hålls över en länk */
     color: #202222;
     transition: 400ms ease-in-out; /* Mjuk övergång */
-    transform:matrix(1.1);
 }
 
 nav a.Active {
@@ -65,7 +64,7 @@ nav a.Active {
      
 main {
     margin-top: 100px;
-    display: flex;
+    display: flex; /* Innehåll blir horisontellt */
 }
       
 .left, .right {
@@ -119,7 +118,7 @@ button {
     border: 2px solid #1d1d1d;
     border-radius: 5px; /* Rundar hörnen på knappen */
     padding: 5px;
-    cursor: pointer;
+    cursor: pointer; /* Ändrar muspekarens utseende när den hålls över en länk */
 }
 
 button:hover {
@@ -142,6 +141,12 @@ p {
     line-height: 1.5; /* Radavstånd för bättre läsbarhet */
 }
 
+p a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
 #WhoAmI  {
     margin: 400px;
     margin-top: 0;
@@ -156,7 +161,6 @@ p {
 #AboutIMG {
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
     border: 2px white;
     background-color: #202222;
 }
@@ -189,6 +193,20 @@ p {
     cursor: pointer;
 }
 
+#CV {
+    text-align: center;
+}
+
+#CVbox {
+    background-color: #1d1d1d;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px;
+}
+
 footer {
     background-color: #202222;
     text-align: center;
@@ -203,7 +221,8 @@ footer a {
 
 .Quick-links, .Social-links { /* Genvägar/Länkar i footer */
     display: inline-block; /* Gör länkarna horisontella */
-    margin-right: 30px; 
+    margin-left: 15px;
+    margin-right: 15px;
     color: #bebebe;
 }  
 
