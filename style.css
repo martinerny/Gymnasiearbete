@@ -32,6 +32,7 @@ nav ul {
     width: 100%;
     margin: 0;
     padding: 16px;
+    padding-right: 0;
     background-color: #202222;
     box-sizing: border-box;
     margin-bottom: 75px;
@@ -167,17 +168,19 @@ p a {
 
 #EduProj {
     display: flex;
+    box-sizing: border-box;
 }
 
 #Education, #Projects {
     margin: 75px;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 75px;
     box-sizing: border-box;
     background-color: #1d1d1d;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 4px 4px 10px;
+    height: fit-content;
 }
 
 .dropbtn {
@@ -206,6 +209,17 @@ p a {
     border-radius: 10px;
     box-shadow: 4px 4px 10px;
 }
+
+#Portfolio {
+    display: flex;
+}
+
+#Portfolio h2 {
+    margin: 5%;
+    margin-top: 0;
+    width: 100%;
+}
+
 
 footer {
     background-color: #202222;
@@ -245,7 +259,42 @@ footer a {
 }
 
 
-@media only screen and (max-device-width: 1250px) {
+/* iPad Portrait Mode */
+@media screen and (max-width: 768px) {
+    #WhoAmI {
+        width: 50%;
+        margin: auto;
+    }
 
+    #Education, #Projects {
+        margin: 25px;
+        margin-top: 100px;
+        margin-bottom: 25px;
+    }
+  }
+
+  /* iPad Landscape Mode */
+  @media screen and (max-width: 1024px) {
+    #WhoAmI {
+        width: 50%;
+        margin: auto;
+    }
+  }
+
+  /* iPhone 6/7/8 Portrait Mode - Ej klart*/
+  @media screen and (max-width: 375px) {
+    #WhoAmI {
+        width: 90%;
+        box-sizing: border-box;
+        margin: auto;
+    }
+
+    #EduProj, #WhoAmI {
+        display: block;
+    }
+  }
+
+  /* iPhone 6/7/8 Landscape Mode */
+  @media screen and (max-width: 667px) {
     
-}
+  }
