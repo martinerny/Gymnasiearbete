@@ -260,7 +260,7 @@ footer a {
 
 
 /* iPad Portrait Mode */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (orientation: portrait) {
     #WhoAmI {
         width: 50%;
         margin: auto;
@@ -273,8 +273,11 @@ footer a {
     }
   }
 
+
+  /* Media Queries */
+
   /* iPad Landscape Mode */
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1024px) and (orientation: landscape) {
     #WhoAmI {
         width: 50%;
         margin: auto;
@@ -282,7 +285,11 @@ footer a {
   }
 
   /* iPhone 6/7/8 Portrait Mode - Ej klart*/
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 375px) and (orientation: portrait) {
+    nav ul li {
+        display: flex;
+    }
+    
     #WhoAmI {
         width: 90%;
         box-sizing: border-box;
@@ -295,6 +302,13 @@ footer a {
   }
 
   /* iPhone 6/7/8 Landscape Mode */
-  @media screen and (max-width: 667px) {
-    
+  @media screen and (max-width: 667px) and (orientation: landscape) {
+    #WhoAmI, #EduProj {
+        width: 75%;
+        margin: auto;
+    }
+
+    #EduProj {
+        display: block;
+    }
   }
